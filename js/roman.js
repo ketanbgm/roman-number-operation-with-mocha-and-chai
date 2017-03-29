@@ -18,7 +18,7 @@
 
       if (isRoman(RomanTwo) == -1) {
           alert(RomanTwo + ' is not a roman number');
-           return -1
+          return -1
       }
       var romanValueOne = roman(RomanOne);
       var romanValueTwo = roman(RomanTwo);
@@ -29,8 +29,8 @@
               break;
           case '-':
               if (romanValueOne == romanValueTwo || romanValueOne < romanValueTwo) {
-                  alert("1st input cannot be less than 2 input")
-                  return -1
+                alert("Roman value one cannot be or less than roman value two");
+                  return 'Error'
               }
               output = romanValueOne - romanValueTwo;
               break;
@@ -39,8 +39,8 @@
               break;
           case '/':
               if (romanValueOne < romanValueTwo) {
-                  alert("1st input cannot be less than 2 input")
-                  return -1
+                  alert("Roman value one cannot be or less than roman value two");
+                  return 'Error'
               }
               output = romanValueOne / romanValueTwo;
               break;

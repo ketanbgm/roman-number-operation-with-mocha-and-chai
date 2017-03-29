@@ -1,5 +1,5 @@
 var assert = chai.assert;
-
+alert = function() {};
 
 function isRomanTest(arr) {
     var mapping = ["M", "D", "C", "L", "X", "V", "I"];
